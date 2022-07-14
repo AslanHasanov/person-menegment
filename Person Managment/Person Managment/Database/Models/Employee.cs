@@ -34,5 +34,10 @@ namespace Person_Managment.Database.Models
             Email = email;
             _idCounter++;
         }
+
+
+
+
+
     }
 }

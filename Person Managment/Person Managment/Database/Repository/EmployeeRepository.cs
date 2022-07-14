@@ -40,7 +40,7 @@ namespace Person_Managment.Database.Repository
             return null;
         }
 
-        public static Employee GetbyId(int id)
+        public static Employee GetById(int id)
         {
             foreach  (Employee person in _persons)
             {
@@ -51,6 +51,15 @@ namespace Person_Managment.Database.Repository
             }
             return null;
         }
+
+
+        public List<Employee> GetAll()
+        {
+            return _persons;
+        }
+
+
+
 
     }
 }
