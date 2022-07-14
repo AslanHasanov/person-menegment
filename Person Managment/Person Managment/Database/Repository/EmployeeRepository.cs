@@ -71,6 +71,21 @@ namespace Person_Managment.Database.Repository
         }
 
 
+        public static bool IsEmailUnique(string email)
+        {
+            foreach (Employee person in _persons)
+            {
+                if (email == person.Email)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+
+
 
     }
 }
