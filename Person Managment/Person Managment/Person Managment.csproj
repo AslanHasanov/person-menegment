@@ -6,4 +6,9 @@
     <RootNamespace>Person_Managment</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ApplicationLogic\" />
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+
 </Project>
