@@ -13,5 +13,17 @@ namespace Person_Managment.ApplicationLogic.Validations
             return text.Length>start && text.Length<=end;
         }
 
+        public static bool IstextCorrect(string text,char character)
+        {
+            foreach(char c in text)
+            {
+                if(c == character)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }
