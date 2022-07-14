@@ -59,6 +59,17 @@ namespace Person_Managment.Database.Repository
         }
 
 
+        public static void DeleteById(int id)
+        {
+            for (int i = 0; i < _persons.Count; i++)
+            {
+                if (_persons[i].Id == id)
+                {
+                    _persons.RemoveAt(i);
+                }
+            }
+        }
+
 
 
     }
