@@ -19,5 +19,10 @@ namespace Person_Managment.DataBase.Models
             Name = name;
 
         }
+
+        public string GetAll()
+        {
+            return Name + Id;
+        }
     }
 }

@@ -42,5 +42,16 @@ namespace Person_Managment.DataBase.Repository
             }
             return null;
         }
+
+       public static void DeleteAdressById(int id)
+        {
+            for (int i = 0; i < _adresses.Count ; i++)
+            {
+                if (_adresses[i].Id == id)
+                {
+                    _adresses.RemoveAt(i);
+                }
+            }
+        }
     }
 }
