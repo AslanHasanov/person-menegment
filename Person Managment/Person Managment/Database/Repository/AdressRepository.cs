@@ -30,5 +30,17 @@ namespace Person_Managment.DataBase.Repository
             }
             return null;    
         }
+
+        public static Adress GetById(int id)
+        {
+            foreach(Adress adress in _adresses)
+            {
+                if(id == adress.Id)
+                {
+                    return adress;
+                }
+            }
+            return null;
+        }
     }
 }
