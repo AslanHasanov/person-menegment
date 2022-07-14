@@ -40,5 +40,17 @@ namespace Person_Managment.Database.Repository
             return null;
         }
 
+        public static Employee GetbyId(int id)
+        {
+            foreach  (Employee person in _persons)
+            {
+                if (person.Id == id)
+                {
+                    return person;
+                }
+            }
+            return null;
+        }
+
     }
 }
