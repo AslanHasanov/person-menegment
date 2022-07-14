@@ -17,5 +17,18 @@ namespace Person_Managment.DataBase.Repository
             _adresses.Add(adress);
             return adress;
         }
+
+        public static Adress Update(string name,int id)
+        {
+            foreach (Adress adress in _adresses)
+            {
+                if(adress.Id == id)
+                {
+                    adress.Name = name;
+                    return adress;
+                }
+            }
+            return null;    
+        }
     }
 }
